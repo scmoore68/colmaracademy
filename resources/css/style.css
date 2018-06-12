@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Universal Styles */
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.container {
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Header Logo/Company Name */
+
+.tophead .container {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 0.25rem;
+}
+
+.logo h4 {
+  font-size: 1rem;
+}
+
+.logo span.Colmar {
+  color: black;
+  font-weight: bold;
+}
+
+.logo span.Academy {
+  color: grey;
+}
+
+.tophead nav {
+  display: inline-block;
+  padding-right: 1.5rem;
+  justify-content: flex-end;
+}
+
+/* Menu */
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+nav li {
+  padding-left: 1rem;
+
+}
+
+/* Banner */
+
+.banner .container .flex {
+  padding: 2rem 1.5rem;
+  justify-content: center;
+  background-color: grey;
+  border: 1px solid red;
+  align-items: center;
+}
+
+.banner-img {
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30rem;
+  width: 60%;
+}
+
+.banner img {
+  width: 60%;
+}
+
+.banner-text {
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  position: relative;'
+}

@@ -80,7 +80,6 @@ nav li {
 /* Banner */
 
 .banner .container {
-  background-color: grey;
   display: flex;
   align-items: center;
   padding: 2rem 1.5rem;
@@ -98,18 +97,19 @@ nav li {
   position: relative;
   flex-direction: column;
   width: 30%;
-
 }
 
 .banner-text h1 {
   font-size: 2.5rem;
   line-height: normal;
+  font-weight: bold;
 }
 
 .banner-text h3 {
   font-size: 1.5rem;
   line-height: normal;
   padding: 1.5rem 0;
+  font-weight: 500;
 }
 
 .banner-text .button {
@@ -120,4 +120,47 @@ nav li {
   width: 100%;
   background-color: blue;
   font-weight: bold;
+}
+
+/* Information section */
+
+.info .container {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.info-main {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  width: 60%;
+  border: 1px solid green;
+}
+
+.info-main img {
+  width: 100%;
+  padding: 2rem 1.5rem;
+
+}
+
+.info-main h2 {
+  font-size: 2rem;
+  line-height: normal;
+  font-weight: bold;
+  padding: 0 1.5rem;
+
+}
+
+p.quote {
+  font-weight: 300;
+  font-color: grey;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
+
+p.credit {
+  font-weight: 300;
+  font-size: 0.75rem;
+  padding: 0 1.5rem 2rem 1.5rem;
 }

@@ -534,6 +534,31 @@ div.thesis-item.first {
   background-color: lightgrey;
 }
 
+/* Thesis section changes for 470px (mobile) screens */
+
+@media only screen and (max-width: 470px) {
+  .thesis {
+    border-top: 0.5px dotted lightgrey;
+  }
+
+  .thesis-video {
+    display: inline;
+    position: relative;
+    width: 100%;
+    padding: 0 0 1.5rem 0;
+  }
+
+  .thesis-video h4, p {
+    display: none;
+  }
+
+  .thesis-other {
+    display: none;
+  }
+
+}
+
+
 /* Footer */
 
 .footer .container {
@@ -543,7 +568,7 @@ div.thesis-item.first {
   align-items: center;
   padding: 1rem 1rem 1.5rem 1.5rem;
   color: lightgrey;
-  border-top: 0.75px solid lightgrey;
+  border-top: 0.5px dotted lightgrey;
 }
 
 .footer p {
@@ -568,4 +593,21 @@ div.thesis-item.first {
 
 .footer a {
   color: lightgrey;
+}
+
+/* Footer changes for 470px (mobile) screens */
+
+@media only screen and (max-width: 470px) {
+
+  .footer .container {
+    padding: 1rem;
+  }
+
+  .footer p {
+    display: inline;
+  }
+
+  .footer nav {
+    display: none;
+  }
 }

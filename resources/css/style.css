@@ -227,7 +227,6 @@ div.info-item.last {
   align-items: center;
   justify-content: space-around;
   padding: 2rem 4.5rem;
-  border: 1px solid black;
   background-color: lightgrey;
 }
 
@@ -245,27 +244,20 @@ div.info-item.last {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-shrink: 1;
-  border: 1px solid red;
-
 }
 
 .subject {
   display: inline-flex;
-  /* position: relative; */
-
   width: 30%;
   flex-shrink: 1;
   flex-direction: column;
   background-color: white;
   margin: 0.5rem;
-
-  /* width: 60%; */
 }
 
 .subject img {
   width: 100%;
   height: auto;
-
 }
 
 .subject .entry {
@@ -281,5 +273,93 @@ div.info-item.last {
   font-weight: 300;
   font-size: 0.75rem;
   color: grey;
+  padding-top: 0.5rem;
+}
+
+/* Thesis exhibit section */
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+  border: 1px solid black;
+  background-color: lightgrey;
+}
+
+.thesis h2 {
+  font-size: 2rem;
+  line-height: normal;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.thesis-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Lefthand video box */
+
+.thesis-video {
+  display: inline-flex;
+  position: relative;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 60%;
+  padding: 0 1.5rem;
+}
+
+.thesis-video video {
+  height: 100%;
+  width: 100%;
+}
+
+.thesis-video h4 {
+  font-size: 1.5rem;
+  padding: 1.5rem 0 0.5rem 0;
+  line-height: normal;
+  font-weight: bold;
+  padding-top: 1.5rem;
+}
+
+.thesis-video p {
+  font-weight: 300;
+  color: grey;
+  padding-bottom: 2rem;
+}
+
+.thesis-other {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  width: 40%;
+}
+
+.thesis-other .info-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  justify-content: flex-start;
+}
+
+.thesis-other .info-item img {
+  margin: 1rem;
+  width: 35%;
+  height: auto;
+  padding: 0;
+}
+
+div.info-details h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+div.info-details p {
+  font-size: 0.75rem;
+  font-weight: 300;
   padding-top: 0.5rem;
 }

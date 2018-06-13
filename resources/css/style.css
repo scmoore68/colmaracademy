@@ -95,7 +95,6 @@ body {
     align-items: center;
     height: 4rem;
     padding: 0 1.5rem;
-
   }
 
   .logo a.mobile {
@@ -154,6 +153,41 @@ body {
   width: 100%;
   background-color: blue;
   font-weight: bold;
+}
+
+/* Banner changes for 470px (mobile) screens */
+
+@media only screen and (max-width: 470px)
+{
+  .banner .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
+    background-color: grey;
+  }
+
+  .banner img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner-text {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .banner-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .banner-text h3 {
+    font-size: 1rem;
+    padding: 2rem 0 1.5rem 0;
+  }
 }
 
 /* Information section */

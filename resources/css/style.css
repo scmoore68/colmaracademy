@@ -250,7 +250,7 @@ p.credit {
 }
 
 div.info-item.first {
-  padding: 0 0.5rem 0.5rem 0;
+  padding-top: 0;
 }
 
 div.info-item.last {
@@ -258,7 +258,6 @@ div.info-item.last {
 }
 
 .info-item img {
-  width: auto;
   padding-right: 1.5rem;
   width: 35%;
   height: auto;
@@ -285,6 +284,53 @@ div.info-item.last {
   font-size: 0.75rem;
   font-weight: 300;
   padding-top: 0.5rem;
+}
+
+/* Information changes for 470px (mobile) screens */
+
+@media only screen and (max-width: 470px)
+{
+  .info {
+    width: 100%;
+    display: block;
+  }
+
+  .info-main {
+    display: none;
+  }
+
+  .info-other {
+    display: flex;
+    /* position: relative; */
+    flex-direction: column;
+    justify-content: center;
+    justify-items: flex-start;
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: transparent;
+  }
+
+.info-other .info-item {
+    display: inline;
+    padding-bottom: 4rem;
+    flex-direction: column;
+  }
+
+  .info-item img {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+
+  .info-details {
+    padding-left: 1rem;
+  }
+
+  div.info-item.last {
+    background-color: transparent;
+    padding-bottom: 0;
+  }
+
 }
 
 /* Learning section */

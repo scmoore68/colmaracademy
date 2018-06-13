@@ -30,6 +30,7 @@ body {
   justify-content: space-between;
   height: 4rem;
   align-items: center;
+  padding: 0 1.5rem;
 }
 
 .logo {
@@ -39,7 +40,6 @@ body {
 
 .logo img {
   height: 2rem;
-  padding-left: 1.5rem;
   padding-right: 0.25rem;
 }
 
@@ -58,7 +58,6 @@ body {
 
 .tophead nav {
   display: inline-block;
-  padding-right: 1.5rem;
   justify-content: flex-end;
 }
 
@@ -74,6 +73,42 @@ body {
 .tophead nav li {
   padding-left: 1rem;
 
+}
+
+/* Hide mobile icons for desktops */
+
+.logo a.mobile {
+  display: none;
+}
+
+/* Tophead changes for 470px (mobile) screens */
+
+@media only screen and (max-width: 470px)
+{
+  .tophead .container {
+    display: block;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 1.5rem;
+
+  }
+
+  .logo a.mobile {
+    display: inline-flex;
+  }
+
+  .logo h4 {
+    display: none;
+  }
+
+  .tophead nav ul {
+    display: none;
+  }
 }
 
 /* Banner */

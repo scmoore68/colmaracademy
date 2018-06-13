@@ -263,6 +263,10 @@ div.info-item.last {
   height: auto;
 }
 
+img.mobile-image {
+  display: none;
+}
+
 .info-details {
   display: inline-flex;
   position: relative;
@@ -284,6 +288,7 @@ div.info-item.last {
   font-size: 0.75rem;
   font-weight: 300;
   padding-top: 0.5rem;
+  color: blue;
 }
 
 /* Information changes for 470px (mobile) screens */
@@ -310,13 +315,18 @@ div.info-item.last {
     background-color: transparent;
   }
 
-.info-other .info-item {
+  .info-other .info-item {
     display: inline;
     padding-bottom: 4rem;
     flex-direction: column;
   }
 
-  .info-item img {
+  img.desktop-image {
+    display:none;
+  }
+
+  img.mobile-image {
+    display: inline;
     width: 100%;
     padding: 0;
     height: auto;
@@ -324,7 +334,8 @@ div.info-item.last {
 
   .info-details {
     padding-left: 1rem;
-  }
+    position: relative;
+    }
 
   div.info-item.last {
     background-color: transparent;

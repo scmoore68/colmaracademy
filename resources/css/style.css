@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-   max-width: 960px;
+   /* max-width: 960px; */
    margin: 0 auto;
 }
 
@@ -124,12 +124,14 @@ nav li {
 
 /* Information section */
 
-.info .container {
+.info {
   border: 1px solid red;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
+
+/* Lefthand main info box */
 
 .info-main {
   display: inline-flex;
@@ -142,7 +144,6 @@ nav li {
 .info-main img {
   width: 100%;
   padding: 2rem 1.5rem;
-
 }
 
 .info-main h2 {
@@ -163,4 +164,59 @@ p.credit {
   font-weight: 300;
   font-size: 0.75rem;
   padding: 0 1.5rem 2rem 1.5rem;
+}
+
+/* Righthand list of other info boxes */
+
+.info-other {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid red;
+  padding: 2rem 0 0 1rem;
+}
+
+.info-other .info-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  justify-content: flex-start;
+  border: 1px solid orange;
+}
+
+div.info-item.first {
+  padding: 0 0.5rem 0.5rem 0;
+}
+
+.info-item img {
+  width: auto;
+  padding-right: 1.5rem;
+  width: 35%;
+  height: auto;
+}
+
+.info-details {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  /* width: 40%; */
+  border: 1px solid black;
+
+}
+.info-item h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.info-item p {
+  font-size: 0.75rem;
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+
+.info-item a {
+  font-size: 0.75rem;
+  font-weight: 300;
+  padding-top: 0.5rem;
 }

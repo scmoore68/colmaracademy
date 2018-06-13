@@ -30,7 +30,6 @@ body {
   justify-content: space-between;
   height: 4rem;
   align-items: center;
-  border: 1px solid black;
 }
 
 .logo {
@@ -65,14 +64,14 @@ body {
 
 /* Menu */
 
-nav ul {
+.tophead nav ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
 }
 
-nav li {
+.tophead nav li {
   padding-left: 1rem;
 
 }
@@ -284,8 +283,6 @@ div.info-item.last {
   align-items: center;
   justify-content: space-around;
   padding: 2rem 0;
-  border: 1px solid black;
-  background-color: lightgrey;
 }
 
 .thesis h2 {
@@ -339,27 +336,67 @@ div.info-item.last {
   width: 40%;
 }
 
-.thesis-other .info-item {
+.thesis-other .thesis-item {
   display: flex;
   align-items: center;
   padding: 0.5rem 0.5rem 0.5rem 0;
   justify-content: flex-start;
 }
 
-.thesis-other .info-item img {
+.thesis-other .thesis-item img {
   margin: 1rem;
   width: 35%;
   height: auto;
   padding: 0;
 }
 
-div.info-details h3 {
+div.thesis-details h3 {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
-div.info-details p {
+div.thesis-details p {
   font-size: 0.75rem;
   font-weight: 300;
   padding-top: 0.5rem;
+}
+
+div.thesis-item.first {
+  background-color: lightgrey;
+}
+
+/* Footer */
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+  padding: 1rem 1rem 1.5rem 1.5rem;
+  color: lightgrey;
+  border-top: 0.75px solid lightgrey;
+}
+
+.footer p {
+  font-size: 0.75rem;
+}
+
+.footer nav {
+  display: inline-block;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+}
+
+.footer nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer nav li {
+  padding-left: 1rem;
+}
+
+.footer a {
+  color: lightgrey;
 }

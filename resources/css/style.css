@@ -309,7 +309,6 @@ img.mobile-image {
     /* position: relative; */
     flex-direction: column;
     justify-content: center;
-    justify-items: flex-start;
     width: 100%;
     padding: 1rem 1rem 2rem 1rem;
     background-color: transparent;
@@ -357,9 +356,7 @@ img.mobile-image {
 
 .learn h2 {
   font-size: 2rem;
-  line-height: normal;
-  font-weight: bold;
-  padding-bottom: 2rem;
+  padding: 2rem 0 1rem 0;
 }
 
 .courses {
@@ -400,6 +397,52 @@ img.mobile-image {
   color: grey;
   padding-top: 0.5rem;
 }
+
+/* Learning section changes for 470px (mobile) screens */
+
+@media only screen and (max-width: 470px) {
+
+  .learn {
+    padding: 2rem 1rem 1.75rem 1rem;
+    background-color: transparent;
+    border-top: 0.5px dotted lightgrey;
+  }
+
+  .learn h2 {
+    padding: 0 0 1rem 0;
+    font-weight: bold;
+  }
+
+  .courses {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: auto;
+  }
+
+  .subject {
+    display: inline-block;
+    width: 100%;
+    background-color: lightgrey;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .subject img {
+    display: none;
+  }
+
+  .entry h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0 1.5rem 1rem;
+  }
+  .entry p {
+    display: none;
+  }
+
+}
+
 
 /* Thesis exhibit section */
 

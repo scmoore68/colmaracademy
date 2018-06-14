@@ -23,6 +23,51 @@ body {
   display: flex;
 }
 
+.quote {
+  font-size: 1rem;
+  font-family: 'Kavivanar', cursive;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  font-family: 'Rokkitt', serif;
+}
+
+p {
+  font-family: 'Rokkitt', serif;
+  font-size: 1rem;
+}
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
 
 /* Fonts:
 font-family: 'Montserrat', sans-serif;
@@ -52,7 +97,6 @@ font-family: 'Kavivanar', cursive;
 }
 
 .logo h4 {
-  font-size: 1rem;
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -81,14 +125,11 @@ font-family: 'Kavivanar', cursive;
 
 .tophead nav li {
   padding-left: 1rem;
-  font-family: 'Montserrat', sans-serif;
-
 }
 
 .tophead nav a {
   color: rgb(82, 101, 143);
   font-size: 0.9rem;
-  font-weight: bold;
 }
 
 .tophead i {
@@ -130,31 +171,6 @@ font-family: 'Kavivanar', cursive;
   }
 }
 
-.palette {
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  color: black;
-  font-style: bold;
-  border: 1px solid black;
-}
-
-.colorF7F5E6 {
-  background-color: #F7F5E6;
-}
-
-.color333A56 {
-  background-color: #333A56;
-}
-
-.color52658F {
-  background-color: #52658F;
-}
-
-.colorE8E8E8 {
-  background-color: #E8E8E8;
-}
-
 /* Banner */
 
 .banner .container {
@@ -178,16 +194,7 @@ font-family: 'Kavivanar', cursive;
   color: rgba(247, 245, 230, 0.8);
 }
 
-.banner-text h1 {
-  font-size: 2.25rem;
-  font-family: 'Montserrat', sans-serif;
-  line-height: normal;
-  font-weight: 700;
-}
-
 .banner-text h3 {
-  font-size: 1.5rem;
-  line-height: normal;
   padding: 1.5rem 0;
   font-weight: 400;
   font-family: 'Rokkitt', serif;
@@ -201,8 +208,6 @@ font-family: 'Kavivanar', cursive;
   width: 100%;
   background-color: rgb(82, 101, 143);
   color: rgba(247, 245, 230, 0.8);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
 }
 
 /* Banner changes for 470px (mobile) screens */
@@ -245,7 +250,6 @@ font-family: 'Kavivanar', cursive;
   align-items: flex-start;
   justify-content: flex-start;
   background-color: rgb(82, 101, 143);
-
 }
 
 /* Lefthand main info box */
@@ -263,27 +267,19 @@ font-family: 'Kavivanar', cursive;
   padding: 2rem 1.5rem;
 }
 
-.info-main h2 {
-  font-size: 2rem;
-  line-height: normal;
-  font-weight: bold;
+.info-main h3 {
   padding: 0 1.5rem;
-  font-family: 'Montserrat', sans-serif;
 }
 
-p.quote {
+.info-main p.quote {
   color: rgba(247, 245, 230, 0.8);
-  font-size: 1rem;
-  font-family: 'Kavivanar', cursive;
   padding: 1.5rem 1.5rem 2rem 1.5rem;
 }
 
 p.credit {
   font-weight: 300;
-  font-size: 1rem;
   padding: 0 1.5rem 2rem 1.5rem;
   color: rgba(247, 245, 230, 0.7);
-  font-family: 'Rokkitt', serif;
 }
 
 /* Righthand list of other info boxes */
@@ -294,12 +290,14 @@ p.credit {
   flex-direction: column;
   width: 40%;
   background-color: rgba(247, 245, 230, 0.8);
+  margin-top: 2rem;
 }
 
 .info-other .info-item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  border: 0.75px solid  rgb(82, 101, 143);
 }
 
 div.info-item.first {
@@ -328,15 +326,10 @@ img.mobile-image {
 }
 
 .info-details h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
   color: rgb(82, 101, 143);
-  font-family: 'Montserrat', sans-serif;
 }
 
 .info-details h4 {
-  font-size: 1rem;
-  font-family: 'Rokkitt', serif;
   font-weight: 300;
   padding-top: 0.5rem;
   color: rgb(82, 101, 143);
@@ -344,11 +337,7 @@ img.mobile-image {
 }
 
 .info-details a {
-  font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
   padding-top: 0.5rem;
-  font-weight: bold;
   color: rgb(82, 101, 143);
 }
 
@@ -417,10 +406,7 @@ img.mobile-image {
 }
 
 .learn h2 {
-  font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
   padding: 2rem 0 1rem 0;
-  font-weight: bold;
   color: rgb(51, 58, 86);
 }
 
@@ -439,7 +425,6 @@ img.mobile-image {
   flex-shrink: 1;
   flex-direction: column;
   background-color: rgb(51, 58, 86);
-  /* background-color: rgba(247, 245, 230, 0.8); */
   margin: 0.5rem;
 }
 
@@ -453,24 +438,17 @@ img.mobile-image {
 }
 
 .entry h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
   color: rgba(247, 245, 230, 0.8);
 }
 
 .entry h4 {
   font-weight: 500;
-  font-family: 'Rokkitt', serif;
-  font-size: 1rem;
   padding-top: 0.5rem;
   color: rgba(247, 245, 230, 0.8);
 }
 
 .entry p {
   font-weight: 300;
-  font-family: 'Rokkitt', serif;
-  font-size: 1rem;
   line-height: 1.12;
   padding-top: 0.5rem;
   color: rgba(247, 245, 230, 0.8);
@@ -486,7 +464,6 @@ img.mobile-image {
 
   .learn h2 {
     padding: 0 0 1rem 0;
-    font-weight: bold;
   }
 
   .courses {
@@ -502,6 +479,7 @@ img.mobile-image {
     display: inline-block;
     width: 100%;
     margin: 0 0 0.5rem 0;
+    border-radius: 6px;
   }
 
   .subject img {
@@ -535,10 +513,6 @@ img.mobile-image {
 }
 
 .thesis h2 {
-  font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
-  line-height: normal;
-  font-weight: bold;
   padding-bottom: 2rem;
   color: rgba(247, 245, 230, 0.8);
 }
@@ -566,19 +540,12 @@ img.mobile-image {
   width: 100%;
 }
 
-.thesis-video h4 {
-  font-size: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
+.thesis-video h3 {
   padding: 1.5rem 0 0.5rem 0;
-  line-height: normal;
-  font-weight: bold;
-  padding-top: 1.5rem;
   color: rgba(247, 245, 230, 0.8);
 }
 
-.thesis-video p {
-  font-size: 1rem;
-  font-family: 'Kavivanar', cursive;
+.thesis-video p.quote {
   color: rgba(247, 245, 230, 0.8);
   padding-bottom: 2rem;
 }
@@ -597,6 +564,7 @@ img.mobile-image {
   justify-content: flex-start;
   background-color: rgba(82, 101, 143, 0.8);
   color: rgba(247, 245, 230, 0.8);
+  border: 0.75px solid  rgb(51, 58, 86);
 }
 
 .thesis-other .thesis-item img {
@@ -606,16 +574,8 @@ img.mobile-image {
   padding: 0;
 }
 
-div.thesis-details h3 {
-  font-size: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-
 div.thesis-details p {
-  font-family: 'Rokkitt', serif;
   font-weight: 300;
-  font-size: 1rem;
   padding-top: 0.5rem;
 }
 
@@ -638,7 +598,7 @@ div.thesis-item.first {
     padding: 0 0 1.5rem 0;
   }
 
-  .thesis-video h4, p {
+  .thesis-video h3, p {
     display: none;
   }
 
@@ -658,11 +618,10 @@ div.thesis-item.first {
   align-items: center;
   padding: 1rem 1rem 1.5rem 1.5rem;
   background-color: rgba(247, 245, 230, 0.6);
+  border-bottom: 0.5px solid rgb(51, 58, 86);
 }
 
 .footer p {
-  font-size: 1rem;
-  font-family: 'Rokkitt', serif;
   color: rgba(82, 101, 143, 0.6);
 }
 
@@ -689,7 +648,7 @@ div.thesis-item.first {
 
 .footer a {
   color: rgba(82, 101, 143, 0.6);
-  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
 }
 
 /* Footer changes for 470px (mobile) screens */

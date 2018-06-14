@@ -9,7 +9,7 @@ html {
 /* Fonts:
 font-family: 'Montserrat', sans-serif;
 font-family: 'Rokkitt', serif;
-font-family: 'Kavivanar', cursive;
+font-family: 'Merriweather', serif;
  */
 
  /* Color Palette:
@@ -37,7 +37,7 @@ body {
 
 .quote {
   font-size: 1rem;
-  font-family: 'Kavivanar', cursive;
+  font-family: 'Merriweather', serif;
 }
 
 h1 {
@@ -178,6 +178,9 @@ a {
     align-items: center;
     height: 4rem;
     padding: 0 1.5rem;
+    /* color: rgb(82, 101, 143); */
+    color: red;
+
   }
 
   .logo a.mobile {
@@ -240,7 +243,6 @@ a {
     flex-direction: column;
     padding: 0;
     background-color: rgb(51, 58, 86);
-
   }
 
   .banner img {
@@ -262,6 +264,10 @@ a {
   .banner-text h3 {
     font-size: 1rem;
     padding: 2rem 0 1.5rem 0;
+  }
+
+  .banner-text .button {
+    border-bottom: 2rem;
   }
 }
 
@@ -392,12 +398,14 @@ img.mobile-image {
     width: 100%;
     padding: 1rem 1rem 2rem 1rem;
     background-color: transparent;
+    margin-top: unset;
   }
 
   .info-other .info-item {
     display: inline;
     padding-bottom: 4rem;
     flex-direction: column;
+    border: unset;
   }
 
   img.desktop-image {
@@ -419,7 +427,7 @@ img.mobile-image {
 
   div.info-item.last {
     background-color: transparent;
-    padding-bottom: 0;
+    padding-bottom: unset;
   }
 
 }
@@ -625,9 +633,6 @@ div.thesis-item.first {
 /* Thesis section changes for 470px (mobile) screens */
 
 @media only screen and (max-width: 470px) {
-  .thesis {
-    border-top: 0.5px dotted lightgrey;
-  }
 
   .thesis-video {
     display: inline;
@@ -676,6 +681,10 @@ div.thesis-item.first {
   color: rgb(51, 58, 86);
 }
 
+div.icons.mobile {
+  display: none;
+}
+
 .footer nav {
   display: inline-block;
   justify-content: flex-end;
@@ -715,6 +724,20 @@ div.thesis-item.first {
   }
 
   .footer p {
+    display: inline;
+    font-size: 0.75rem;
+  }
+
+  .icons i {
+    color: rgba(82, 101, 143, 0.8);
+    padding: 0 0.25rem;
+  }
+
+  div.icons.desktop {
+    display: none;
+  }
+
+  div.icons.mobile {
     display: inline;
   }
 

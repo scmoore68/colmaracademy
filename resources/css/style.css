@@ -31,6 +31,7 @@ body {
   height: 4rem;
   align-items: center;
   padding: 0 1.5rem;
+  background-color: hsl(52.9, 51.5%, 93.5%);
 }
 
 .logo {
@@ -48,12 +49,13 @@ body {
 }
 
 .logo span.Colmar {
-  color: black;
+  color: hsl(221.3, 27.1%, 44.1%);
   font-weight: bold;
 }
 
 .logo span.Academy {
-  color: grey;
+  color: hsl(221.3, 27.1%, 44.1%, 0.6);
+  font-weight: bold;
 }
 
 .tophead nav {
@@ -67,12 +69,20 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
 }
 
 .tophead nav li {
   padding-left: 1rem;
+}
 
+.tophead nav a {
+  color: hsl(221.3, 27.1%, 44.1%);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.tophead i {
+  color: hsl(221.3, 27.1%, 44.1%);
 }
 
 /* Hide mobile icons for desktops */
@@ -110,6 +120,31 @@ body {
   }
 }
 
+.palette {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: black;
+  font-style: bold;
+  border: 1px solid black;
+}
+
+.colorF7F5E6 {
+  background-color: #F7F5E6;
+}
+
+.color333A56 {
+  background-color: #333A56;
+}
+
+.color52658F {
+  background-color: #52658F;
+}
+
+.colorE8E8E8 {
+  background-color: #E8E8E8;
+}
+
 /* Banner */
 
 .banner .container {
@@ -117,7 +152,7 @@ body {
   align-items: center;
   padding: 2rem 1.5rem;
   justify-content: flex-start;
-  background-color: grey;
+  background-color: hsl(228, 25.5%, 26.9%);
 }
 
 .banner img {
@@ -130,6 +165,7 @@ body {
   position: relative;
   flex-direction: column;
   width: 30%;
+  color: hsl(0, 0%, 91%);
 }
 
 .banner-text h1 {
@@ -151,7 +187,8 @@ body {
   justify-content: center;
   padding: 0.5rem;
   width: 100%;
-  background-color: blue;
+  background-color: hsl(221.3, 27.1%, 44.1%);
+  color: hsl(52.9, 51.5%, 93.5%);
   font-weight: bold;
 }
 
@@ -160,12 +197,10 @@ body {
 @media only screen and (max-width: 470px)
 {
   .banner .container {
-    display: flex;
-    align-items: center;
     flex-direction: column;
     padding: 0;
-    justify-content: flex-start;
-    background-color: grey;
+    background-color: hsl(228, 25.5%, 26.9%);
+
   }
 
   .banner img {
@@ -205,6 +240,7 @@ body {
   position: relative;
   flex-direction: column;
   width: 60%;
+  background-color: hsl(221.3, 27.1%, 44.1%);
 }
 
 .info-main img {
@@ -217,12 +253,13 @@ body {
   line-height: normal;
   font-weight: bold;
   padding: 0 1.5rem;
-
+  color: hsl(52.9, 51.5%, 93.5%);
 }
 
 p.quote {
   font-weight: 300;
-  color: grey;
+  color: hsl(52.9, 51.5%, 93.5%, 0.8);
+  font-style: italic;
   padding: 1.5rem 1.5rem 2rem 1.5rem;
 }
 
@@ -230,6 +267,7 @@ p.credit {
   font-weight: 300;
   font-size: 0.75rem;
   padding: 0 1.5rem 2rem 1.5rem;
+  color: hsl(52.9, 51.5%, 93.5%, 0.7);
 }
 
 /* Righthand list of other info boxes */
@@ -240,6 +278,7 @@ p.credit {
   flex-direction: column;
   width: 40%;
   padding: 2rem 0 0 1rem;
+  /* background-color: hsl(52.9, 51.5%, 93.5%; */
 }
 
 .info-other .info-item {
@@ -573,6 +612,11 @@ div.thesis-item.first {
 
 .footer p {
   font-size: 0.75rem;
+}
+
+.icons i {
+  color: grey;
+  padding: 0 0.25rem;
 }
 
 .footer nav {

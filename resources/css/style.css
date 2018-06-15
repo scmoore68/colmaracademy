@@ -35,11 +35,6 @@ body {
   display: flex;
 }
 
-.quote {
-  font-size: 1rem;
-  font-family: 'Merriweather', serif;
-}
-
 h1 {
   font-size: 2.25rem;
   font-family: 'Montserrat', sans-serif;
@@ -66,6 +61,7 @@ h4 {
 p {
   font-family: 'Rokkitt', serif;
   font-size: 1rem;
+  line-height: 1.1;
 }
 
 .button {
@@ -79,6 +75,12 @@ a {
   font-size: 1rem;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+}
+
+.quote {
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+  line-height: 1.45;
 }
 
 /* Header Logo/Company Name */
@@ -100,6 +102,7 @@ a {
 .logo img {
   height: 2rem;
   padding-right: 0.25rem;
+  opacity: 0.7;
 }
 
 .logo h4 {
@@ -170,6 +173,7 @@ a {
 {
   .tophead .container {
     display: block;
+    /* background-color: rgba(82, 101, 143, 0.6); */
   }
 
   .logo {
@@ -178,9 +182,10 @@ a {
     align-items: center;
     height: 4rem;
     padding: 0 1.5rem;
-    /* color: rgb(82, 101, 143); */
-    color: red;
+  }
 
+  .logo img {
+    opacity: 0.5;
   }
 
   .logo a.mobile {
@@ -223,6 +228,7 @@ a {
   padding: 1.5rem 0;
   font-weight: 400;
   font-family: 'Rokkitt', serif;
+  line-height: 1.1;
 }
 
 .banner-text .button {
@@ -259,6 +265,7 @@ a {
 
   .banner-text h1 {
     font-size: 1.5rem;
+    line-height: 1.2;
   }
 
   .banner-text h3 {
@@ -295,7 +302,7 @@ a {
   padding: 2rem 1.5rem;
 }
 
-.info-main h3 {
+.info-main h2 {
   padding: 0 1.5rem;
 }
 
@@ -361,7 +368,7 @@ img.mobile-image {
   font-weight: 300;
   padding-top: 0.5rem;
   color: rgb(82, 101, 143);
-
+  line-height: 1.1;
 }
 
 .info-details a {
@@ -425,6 +432,10 @@ img.mobile-image {
     color: rgb(247, 245, 230);
   }
 
+  .info-details a {
+    font-size: 1rem;
+  }
+
   div.info-item.last {
     background-color: transparent;
     padding-bottom: unset;
@@ -485,6 +496,7 @@ img.mobile-image {
 
 .entry h3, a {
   color: rgba(247, 245, 230, 0.8);
+  font-size: 1.25rem;
 }
 
 .entry h4 {
@@ -532,9 +544,10 @@ img.mobile-image {
     display: none;
   }
 
-  .entry h3 {
+  .entry h3  {
     padding: 1rem 0 1.5rem 1rem;
   }
+
 
   .entry h4 {
     display: none;
@@ -544,6 +557,9 @@ img.mobile-image {
     display: none;
   }
 
+  .entry a {
+    font-size: 1.5rem;
+  }
 }
 
 
@@ -634,6 +650,14 @@ div.thesis-item.first {
 
 @media only screen and (max-width: 470px) {
 
+  .thesis {
+    background-color: rgba(247, 245, 230, 0.8);
+  }
+
+  .thesis h2 {
+    color: rgb(51, 58, 86);
+  }
+
   .thesis-video {
     display: inline;
     position: relative;
@@ -721,15 +745,17 @@ div.icons.mobile {
   .footer .container {
     padding: 1rem;
     height: auto;
+    background-color: rgba(82, 101, 143, 0.8);
   }
 
   .footer p {
     display: inline;
     font-size: 0.75rem;
+    color: rgba(247, 245, 230, 0.7);
   }
 
   .icons i {
-    color: rgba(82, 101, 143, 0.8);
+    color: rgba(247, 245, 230, 0.7);
     padding: 0 0.25rem;
   }
 

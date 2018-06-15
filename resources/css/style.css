@@ -173,7 +173,6 @@ a {
 {
   .tophead .container {
     display: block;
-    /* background-color: rgba(82, 101, 143, 0.6); */
   }
 
   .logo {
@@ -440,7 +439,6 @@ img.mobile-image {
     background-color: transparent;
     padding-bottom: unset;
   }
-
 }
 
 /* Learning section */
@@ -549,11 +547,7 @@ img.mobile-image {
   }
 
 
-  .entry h4 {
-    display: none;
-  }
-
-  .entry p {
+  .entry h4, p {
     display: none;
   }
 

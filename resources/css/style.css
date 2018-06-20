@@ -169,7 +169,7 @@ a {
 
 /* Tophead changes for 470px (mobile) screens */
 
-@media only screen and (max-width: 470px)
+@media screen and (max-width: 470px)
 {
   .tophead .container {
     display: block;
@@ -242,7 +242,7 @@ a {
 
 /* Banner changes for 470px (mobile) screens */
 
-@media only screen and (max-width: 470px)
+@media screen and (max-width: 470px)
 {
   .banner .container {
     flex-direction: column;
@@ -385,7 +385,7 @@ img.mobile-image {
 
 /* Information changes for 470px (mobile) screens */
 
-@media only screen and (max-width: 470px) {
+@media screen and (max-width: 470px) {
 
   .info {
     width: 100%;
@@ -512,7 +512,7 @@ img.mobile-image {
 
 /* Learning section changes for 470px (mobile) screens */
 
-@media only screen and (max-width: 470px) {
+@media screen and (max-width: 470px) {
 
   .learn {
     padding: 2rem 1rem 1.75rem 1rem;
@@ -642,7 +642,7 @@ div.thesis-item.first {
 
 /* Thesis section changes for 470px (mobile) screens */
 
-@media only screen and (max-width: 470px) {
+@media screen and (max-width: 470px) {
 
   .thesis {
     background-color: rgba(247, 245, 230, 0.8);
@@ -734,7 +734,7 @@ div.icons.mobile {
 
 /* Footer changes for 470px (mobile) screens */
 
-@media only screen and (max-width: 470px) {
+@media screen and (max-width: 470px) {
 
   .footer .container {
     padding: 1rem;

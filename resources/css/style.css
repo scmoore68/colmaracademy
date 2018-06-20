@@ -167,9 +167,9 @@ a {
   display: none;
 }
 
-/* Tophead changes for 470px (mobile) screens */
+/* Tophead changes for 375px (mobile) screens */
 
-@media only screen and (max-width: 470px)
+@media only screen and (max-width: 375px)
 {
   .tophead .container {
     display: block;
@@ -240,9 +240,9 @@ a {
   color: rgba(247, 245, 230, 0.8);
 }
 
-/* Banner changes for 470px (mobile) screens */
+/* Banner changes for 375px (mobile) screens */
 
-@media only screen and (max-width: 470px)
+@media only screen and (max-width: 375px)
 {
   .banner .container {
     flex-direction: column;
@@ -383,9 +383,9 @@ img.mobile-image {
   color: rgb(51, 58, 86);
 }
 
-/* Information changes for 470px (mobile) screens */
+/* Information changes for 375px (mobile) screens */
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 375px) {
 
   .info {
     width: 100%;
@@ -510,9 +510,9 @@ img.mobile-image {
   color: rgba(247, 245, 230, 0.7);
 }
 
-/* Learning section changes for 470px (mobile) screens */
+/* Learning section changes for 375px (mobile) screens */
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 375px) {
 
   .learn {
     padding: 2rem 1rem 1.75rem 1rem;
@@ -640,9 +640,9 @@ div.thesis-item.first {
   color: rgb(82, 101, 143);
 }
 
-/* Thesis section changes for 470px (mobile) screens */
+/* Thesis section changes for 375px (mobile) screens */
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 375px) {
 
   .thesis {
     background-color: rgba(247, 245, 230, 0.8);
@@ -732,9 +732,9 @@ div.icons.mobile {
   color: rgb(51, 58, 86);
 }
 
-/* Footer changes for 470px (mobile) screens */
+/* Footer changes for 375px (mobile) screens */
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 375px) {
 
   .footer .container {
     padding: 1rem;
